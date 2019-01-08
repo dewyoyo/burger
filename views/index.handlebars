@@ -1,0 +1,30 @@
+<div class="order-container">
+    <h2>Order a burger!!</h2><br>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="burger_name">Burger Name</label><br>
+            <input type="text" id="burger_name" name="name">
+        </div><br>
+        <button type="submit" id="order-button">Order burger</button>
+    </form>
+</div>
+
+<div class="main-container">
+
+    <h1>Eat Da Burger</h1>
+
+    {{#each burgers}}
+    {{#if devoured}}
+    <div class="undevoured-container">
+        <div class="devoured-box">{{burger_name}} ==>DEVOURED</div><br>
+    </div>
+    {{else}}
+    <div class="devoured-container">
+        <div class="burger-box">{{burger_name}} <button type="submit" class="devour-button" data-id="{{id}}"
+                data-newdevour="{{devour}}">devour</button></div><br>
+    </div>
+    {{/if}}
+    {{/each}}
+
+</div>

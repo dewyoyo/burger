@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+
+.main-container {
+    width: 900px;
+    padding: 30px;
+    float :right;
+}
+.order-container {
+    width: 300px;
+    padding: 30px;
+    float: left;
+}
+/* .undevoured-container {
+
+    width : 20%;
+    float :right;
+}
+.devoured-container {
+
+    width: 20%;
+    float: left;
+} */
+.burger-box {
+    border : 7px;
+    border-color : black;
+    padding: 5px;
+    margin: 5px;
+    background: yellowgreen;
+    float: left;
+    size : 10%
+}
+.devoured-box {
+    border : 7px;
+    border-color : black;
+    padding: 5px;
+    margin: 5px;
+    background: blue;
+    float: right;
+    size : 10%
+}
+/*  ##Screen = B/w 768px  */
+@media screen and (max-width: 768px) {
+    .main-container {
+        width: 500px;
+        padding: 30px;
+        float :right;
+    }
+    .order-container {
+        width: 200px;
+        padding: 30px;
+        float: left;
+    }  
+}
+
+/*  ##Screen = B/w 640px  */
+@media screen and (max-width: 640px) {
+    .main-container {
+        width: 400px;
+        padding: 30px;
+        float :right;
+    }
+    .order-container {
+        width: 200px;
+        padding: 30px;
+        float: left;
+    }
+}
