@@ -1,3 +1,4 @@
+<header> <h1>Eat Da Burger</h1> </header>
 <div class="order-container">
     {{!-- <img src="../public/assets/img/Whopper.jpg" alt="Burger"> --}}
     <img src="/assets/img/Whopper.jpg" id="burger-img" alt="Burger">
@@ -13,19 +14,28 @@
 </div>
 
 <div class="main-container">
-
-    <h1>Eat Da Burger</h1>
+    
+    <div class="devoured-container"></div>
+    <div class="undevoured-container"></div>
 
     {{#each burgers}}
     {{#if devoured}}
-    <div class="undevoured-container">
-        <div class="devoured-box">{{burger_name}} ==>DEVOURED</div><br>
-    </div>
+    
+    <script>
+        var newDevourITem = "<div class='devoured-box'>{{burger_name}} ==>DEVOURED</div><br>"
+        $(".devoured-container").append(newDevourITem);
+    </script>
+        {{!-- <div class="devoured-box">{{burger_name}} ==>DEVOURED</div><br> --}}
+
     {{else}}
-    <div class="devoured-container">
-        <div class="burger-box">{{burger_name}} <button type="submit" class="devour-button" data-id="{{id}}"
-                data-newdevour="{{devour}}">devour</button></div><br>
-    </div>
+    <script>
+        var newUnDevourITem = "<div class='burger-box'>{{burger_name}} <button type='submit' class='devour-button' data-id='{{id}}' data-newdevour='{{devour}}'>devour</button></div><br>";
+        $(".undevoured-container").append(newUnDevourITem);
+    </script>
+
+        {{!-- <div class="burger-box">{{burger_name}} <button type="submit" class="devour-button" data-id="{{id}}"
+                data-newdevour="{{devour}}">devour</button></div><br> --}}
+
     {{/if}}
     {{/each}}
 

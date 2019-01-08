@@ -1,7 +1,14 @@
 * {
     box-sizing: border-box;
+    text-align: center;
   }
 
+header {
+	padding: 20px;
+	margin-bottom: 20px;
+	color: #333;
+	background: #ccc;
+}
 .main-container {
     width: 900px;
     padding: 30px;
@@ -14,14 +21,14 @@
     float: left;
 }
 .undevoured-container {
-    width: 550px;
+    width: 400px;
     padding: 30px;
-    float :right;
+    float :left;
 }
 .devoured-container {
-    width: 250px;
+    width: 400px;
     padding: 30px;
-    float: left;
+    float: right;
 }
 .burger-box {
     border : 7px;
@@ -30,7 +37,7 @@
     margin: 5px;
     background: yellowgreen;
     float: left;
-    /* size : 10% */
+    width: 200px;
 }
 .devoured-box {
     border : 7px;
@@ -39,7 +46,7 @@
     margin: 5px;
     background: blue;
     float: right;
-    /* size : 10% */
+    width: 200px;
 }
 #burger-img {
     width: 300px;
