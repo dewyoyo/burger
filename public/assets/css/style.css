@@ -37,6 +37,7 @@ header {
     background: yellowgreen;
     float: left;
     width: 300px;
+    text-align: left;
 }
 .devoured-box {
     padding: 5px;
@@ -44,6 +45,7 @@ header {
     background: teal;
     float: right;
     width: 300px;
+    text-align: left;
 }
 #burger-img {
     width: 300px;
@@ -73,6 +75,7 @@ input[type=text],
     cursor: pointer;
     background: #333;
     border: 0 none;
+    float: right;
 }
 /*  ##Screen = B/w 768px  */
 @media screen and (max-width: 768px) {
