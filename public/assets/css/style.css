@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 header {
@@ -47,6 +48,31 @@ header {
 #burger-img {
     width: 300px;
     height: 200px;
+}
+input[type=text],
+{
+    display: block;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    height: 100px;
+    background-color: black;
+}
+#order-button {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #333;
+    border: 0 none;
+}
+.devour-button{
+    padding: 5px;
+    font-size: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #333;
+    border: 0 none;
 }
 /*  ##Screen = B/w 768px  */
 @media screen and (max-width: 768px) {
