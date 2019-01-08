@@ -10,43 +10,39 @@ header {
 	background: #ccc;
 }
 .main-container {
-    width: 900px;
+    width: 70%;
     padding: 30px;
     float :right;
     background-color: lightgoldenrodyellow;
 }
 .order-container {
-    width: 300px;
+    width: 30%;
     padding: 30px;
     float: left;
 }
 .undevoured-container {
-    width: 400px;
+    width: 50%;
     padding: 30px;
     float :left;
 }
 .devoured-container {
-    width: 400px;
+    width: 50%;
     padding: 30px;
     float: right;
 }
 .burger-box {
-    border : 7px;
-    border-color : black;
     padding: 5px;
     margin: 5px;
     background: yellowgreen;
     float: left;
-    width: 200px;
+    width: 300px;
 }
 .devoured-box {
-    border : 7px;
-    border-color : black;
     padding: 5px;
     margin: 5px;
-    background: blue;
+    background: teal;
     float: right;
-    width: 200px;
+    width: 300px;
 }
 #burger-img {
     width: 300px;
@@ -55,27 +51,39 @@ header {
 /*  ##Screen = B/w 768px  */
 @media screen and (max-width: 768px) {
     .main-container {
-        width: 500px;
+        width: 100%;
         padding: 30px;
-        float :right;
     }
     .order-container {
-        width: 200px;
+        width: 100%;
         padding: 30px;
-        float: left;
-    }  
+    }
+    .undevoured-container {
+        width: 100%;
+        padding: 30px;
+    }
+    .devoured-container {
+        width: 100%;
+        padding: 30px;
+    }
 }
 
 /*  ##Screen = B/w 640px  */
 @media screen and (max-width: 640px) {
     .main-container {
-        width: 400px;
+        width: 100%;
         padding: 30px;
-        float :right;
     }
     .order-container {
-        width: 200px;
+        width: 100%;
         padding: 30px;
-        float: left;
+    }
+    .undevoured-container {
+        width: 100%;
+        padding: 30px;
+    }
+    .devoured-container {
+        width: 100%;
+        padding: 30px;
     }
 }
